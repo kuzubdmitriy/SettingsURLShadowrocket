@@ -7,8 +7,8 @@ dns-server = 8.8.8.8, 1.1.1.1
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 127.0.0.1, localhost
 
 [Proxy]
-Timeweb = hysteria2, 185.125.201.124, 1935, password=admin:UFWvPiWOXrrAQeROuqVlYxmkNfAUbt8s, sni=github.com, obfs=salamander, obfs-password=uG0Pz7SCtSxs7HLJYX5sVlvzJaegVF, insecure=1
-my-IPv4 = hysteria2, 194.87.55.84, 1935, password=my:ihaa0ebiC3UMdThI9YPuOTIcu5z2QGY7, sni=github.com, obfs=salamander, obfs-password=Ry9DTzMCuhsG6TeewihB2IqAKUz56eiv, insecure=1
+Timeweb = hysteria2, 185.125.201.124, 1935, password=admin:UFWvPiWOXrrAQeROuqVlYxmkNfAUbt8s, obfs=salamander, obfs-password=uG0Pz7SCtSxs7HLJYX5sVlvzJaegVF, peer=github.com, skip-cert-verify=true
+my-IPv4 = hysteria2, 194.87.55.84, 1935, password=my:ihaa0ebiC3UMdThI9YPuOTIcu5z2QGY7, obfs=salamander, obfs-password=Ry9DTzMCuhsG6TeewihB2IqAKUz56eiv, peer=github.com, skip-cert-verify=true
 
 [Proxy Group]
 # Подписка — автовыбор лучшего сервера по скорости + проверка доступности
